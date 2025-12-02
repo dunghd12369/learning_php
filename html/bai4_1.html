@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form id="myform">
+            <input type="text" id= "ten" placeholder="Tên">
+            <button type="submit">gui</button>
+        </form>
+        <script>
+            document.getElementById("myform")
+            .addEventListener("submit",function(event){
+               let name = document.getElementById("ten").value;
+               if(name===""){
+                alert("vui long nhap ten");
+                event.preventDefault();
+               }
+            });
+        </script>
+    </body>
+
+            
+</html>
